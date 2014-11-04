@@ -18,7 +18,11 @@ DAT.Globe = function(container, opts) {
   
   var colorFn = opts.colorFn || function(x) {
     var c = new THREE.Color();
-    c.setHSL( ( 0.6 - ( x * 0.5 ) ), 1.0, 0.5 );
+    var scale = chroma.scale('GnBu'); // from http://colorbrewer2.org/
+    
+    // chroma.js returns values 0-255, but three.js wants 0-1
+    c.setRGB( scale(x).rgb()[0]/255, scale(x).rgb()[1]/255, scale(x).rgb()[2]/255 );
+    
     return c;
   };
   var imgDir = opts.imgDir || '';

@@ -7,6 +7,8 @@ See it live [here](http://nsf-polar-cyberinfrastructure.github.io/issue-79/).
 
 Borrows heavily from the [WebGL Globe](https://github.com/dataarts/webgl-globe). See the original readme below.
 
+Colors by [chroma.js](https://github.com/gka/chroma.js)
+
 
 
 WebGL Globe
