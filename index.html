@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>WebGL Globe</title>
+    <title>Ice Cores</title>
     <meta charset="utf-8">
     <style type="text/css">
       html {
@@ -106,17 +106,17 @@
   <div id="container"></div>
 
   <div id="info">
-    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://www.ncdc.noaa.gov/data-access/paleoclimatology-data/datasets/ice-core">NCDC</a>
   </div>
 
   <div id="currentInfo">
-    <span id="year1990" class="year">1990</span>
-    <span id="year1995" class="year">1995</span>
-    <span id="year2000" class="year">2000</span>
+    <span id="year1990" class="year">Accum.</span>
+    <span id="year1995" class="year">Black Carbon</span>
+    <span id="year2000" class="year">Melt Layer</span>
   </div>
 
   <div id="title">
-    World Population
+    Ice Cores
   </div>
 
   <a id="ce" href="http://www.chromeexperiments.com/globe">
@@ -165,7 +165,7 @@
       
       
       xhr = new XMLHttpRequest();
-      xhr.open('GET', 'ice_core_test_data.json', true);
+      xhr.open('GET', 'data.json', true);
       xhr.onreadystatechange = function(e) {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
