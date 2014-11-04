@@ -10,6 +10,9 @@ Borrows heavily from the [WebGL Globe](https://github.com/dataarts/webgl-globe).
 Colors by [chroma.js](https://github.com/gka/chroma.js)
 
 
+In the future, look into [Cesium](http://cesiumjs.org/) for more functionality.
+
+
 
 WebGL Globe
 -----------
