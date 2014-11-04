@@ -31,7 +31,7 @@
       }
 
       #currentInfo {
-        width: 270px;
+        width: 200px;
         position: absolute;
         left: 20px;
         top: 63px;
@@ -58,11 +58,12 @@
       #title {
         position: absolute;
         top: 20px;
-        width: 270px;
+        width: 200px;
         left: 20px;
         background-color: rgba(0,0,0,0.2);
         border-radius: 3px;
         font: 20px Georgia;
+        text-align: center;
         padding: 10px;
       }
 
@@ -72,7 +73,7 @@
         height: 30px;
         text-align: center;
         float: left;
-        width: 90px;
+        width: 100%;
         color: rgba(255, 255, 255, 0.4);
 
         cursor: pointer;
@@ -110,13 +111,14 @@
   </div>
 
   <div id="currentInfo">
-    <span id="year1990" class="year">Accum.</span>
+    <span id="year1985" class="year">All</span>
+    <span id="year1990" class="year">Accumulation</span>
     <span id="year1995" class="year">Black Carbon</span>
     <span id="year2000" class="year">Melt Layer</span>
   </div>
 
   <div id="title">
-    Ice Cores
+    Measurements
   </div>
 
   <a id="ce" href="http://www.chromeexperiments.com/globe">
@@ -134,7 +136,7 @@
       Detector.addGetWebGLMessage();
     } else {
 
-      var years = ['1990','1995','2000'];
+      var years = ['1985','1990','1995','2000'];
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
